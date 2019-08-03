@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+
+.edgtf-testimonials-holder {
+    
+    &.edgtf-testimonials-standard {
+        text-align: center;
+
+        .edgtf-testimonial-content {
+            max-width: 1200px;
+            margin: auto;
+
+            @include laptop-landscape-large() {
+                max-width: 1000px;
+            }
+        }
+
+        .edgtf-testimonial-image {
+            @include edgtfRelativeHolderLayout();
+            margin: 25px 0 0;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .edgtf-testimonial-title {
+            margin: 35px 0 0;
+        }
+
+        .edgtf-testimonial-author {
+            margin: 40px 0 0;
+            font-size: 18px;
+        }
+
+        .edgtf-testimonial-text {
+            margin: 19px 0 0;
+            color: #a7a9ac;
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */

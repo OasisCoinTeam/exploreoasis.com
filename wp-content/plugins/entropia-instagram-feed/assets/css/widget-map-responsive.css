@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+@keyframes edgtf-glow-pulse-anim {
+  to {
+    text-shadow: 3px 3px 23px rgba(142, 248, 210, 0.85), -3px -3px 23px rgba(142, 248, 210, 0.85), 1px -3px 35px rgba(142, 248, 210, 0.85), -3px 3px 35px rgba(142, 248, 210, 0.85);
+  }
+}
+
+@keyframes edgtf-arrow-glow-pulse-anim {
+  to {
+    text-shadow: 0 0 30px red, 0 0 30px red, -1px -1px 37px red, 2px 2px 37px red;
+  }
+}
+
+/* ==========================================================================
+   Widgets responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Instagram widget responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgtf-instagram-feed:not(.edgtf-instagram-carousel) li img {
+    width: 100%;
+  }
+  .edgtf-instagram-feed:not(.edgtf-instagram-carousel).edgtf-col-6 li {
+    width: 25%;
+  }
+  .edgtf-instagram-feed:not(.edgtf-instagram-carousel).edgtf-col-9 li {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-instagram-feed:not(.edgtf-instagram-carousel).edgtf-col-6 li {
+    width: 33.33333%;
+  }
+  .edgtf-instagram-feed:not(.edgtf-instagram-carousel).edgtf-col-9 li {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-instagram-feed:not(.edgtf-instagram-carousel) li {
+    width: 50% !important;
+  }
+}
+
+/* ==========================================================================
+   Instagram widget responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/entropia-instagram-feed/assets/css/widget-map-responsive.css.map */

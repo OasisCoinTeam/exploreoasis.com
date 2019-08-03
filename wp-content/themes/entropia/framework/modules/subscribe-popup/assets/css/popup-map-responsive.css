@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Subscribe Popup responsive styles - begin
+   ========================================================================== */
+@keyframes edgtf-glow-pulse-anim {
+  to {
+    text-shadow: 3px 3px 23px rgba(142, 248, 210, 0.85), -3px -3px 23px rgba(142, 248, 210, 0.85), 1px -3px 35px rgba(142, 248, 210, 0.85), -3px 3px 35px rgba(142, 248, 210, 0.85);
+  }
+}
+
+@keyframes edgtf-arrow-glow-pulse-anim {
+  to {
+    text-shadow: 0 0 30px red, 0 0 30px red, -1px -1px 37px red, 2px 2px 37px red;
+  }
+}
+
+/* ==========================================================================
+# Subscribe Pop-up style responsive - begin
+========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .edgtf-subscribe-popup-holder .edgtf-sp-inner {
+    width: 63%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-subscribe-popup-holder .edgtf-sp-inner {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-subscribe-popup-holder .edgtf-sp-inner {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-subscribe-popup-holder .edgtf-sp-inner {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-subscribe-popup-holder .edgtf-sp-content-container {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .edgtf-subscribe-popup-holder .edgtf-sp-background {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+# Subscribe Pop-up style responsive - end
+========================================================================== */
+/* ==========================================================================
+   Subscribe Popup responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=popup-map-responsive.css.map */

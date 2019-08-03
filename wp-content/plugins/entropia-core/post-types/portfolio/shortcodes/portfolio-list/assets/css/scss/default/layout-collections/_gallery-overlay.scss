@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-list-holder {
+	
+	&.edgtf-pl-gallery-overlay {
+		
+		&.edgtf-pl-has-shadow {
+			
+			.edgtf-pl-item-inner {
+				box-shadow: $default-box-shadow;
+			}
+		}
+		
+		article {
+			
+			&:hover {
+				
+				.edgtf-pli-text-holder {
+					opacity: 1;
+					animation-name: edgtf-bg-flow;
+					animation-duration: 10s;
+					animation-timing-function: linear;
+					animation-iteration-count: infinite;
+				}
+			}
+			
+			.edgtf-pl-item-inner {
+				overflow: hidden;
+			}
+			
+			.edgtf-pli-text {
+				
+				.edgtf-pli-title,
+				.edgtf-pli-excerpt {
+					color: #fff;
+					
+					@include edgtfFontShadowHuge();
+				}
+				
+				.edgtf-pli-category-holder {
+					
+					a {
+						color: #fff;
+						
+						&:hover {
+							color: $first-main-color;
+						}
+					}
+				}
+			}
+		}
+		
+		@keyframes edgtf-bg-flow {
+			0% {
+				background-position-y: 0;
+			}
+			20% {
+				background-position-y: -78px;
+			}
+			21%, 22% {
+				background-position-y: -80px;
+			}
+			24% {
+				background-position-y: -100px;
+			}
+			51%, 52% {
+				background-position-y: -200px;
+			}
+			53% {
+				background-position-y: -220px;
+			}
+			100% {
+				background-position-y: -400px;
+			}
+		}
+		
+		.edgtf-pli-text-holder {
+			@include edgtfAbsoluteHolderLayout();
+			padding: 50px;
+			background-color: rgba(0,0,0,0.8);
+			opacity: 0;
+			text-align: center;
+			box-sizing: border-box;
+			@include edgtfTransition(opacity .2s ease-in-out);
+			
+			.edgtf-pli-overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - end
+   ========================================================================== */

@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Icon widget style - begin
+   ========================================================================== */
+@keyframes edgtf-glow-pulse-anim {
+  to {
+    text-shadow: 3px 3px 23px rgba(142, 248, 210, 0.85), -3px -3px 23px rgba(142, 248, 210, 0.85), 1px -3px 35px rgba(142, 248, 210, 0.85), -3px 3px 35px rgba(142, 248, 210, 0.85);
+  }
+}
+
+@keyframes edgtf-arrow-glow-pulse-anim {
+  to {
+    text-shadow: 0 0 30px red, 0 0 30px red, -1px -1px 37px red, 2px 2px 37px red;
+  }
+}
+
+.edgtf-icon-widget-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.edgtf-icon-widget-holder > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.edgtf-icon-widget-holder .edgtf-icon-text {
+  padding: 0 0 0 10px;
+}
+
+.edgtf-icon-widget-holder .edgtf-icon-text.edgtf-no-icon {
+  padding: 0;
+}
+
+.edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-icon-widget-holder {
+  color: #fff !important;
+}
+
+.edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-icon-widget-holder:hover {
+  color: #8ef8d2 !important;
+}
+
+.edgtf-light-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-icon-widget-holder {
+  color: #fff !important;
+}
+
+.edgtf-light-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-icon-widget-holder:hover {
+  color: #8ef8d2 !important;
+}
+
+/* ==========================================================================
+   Icon widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=icon-widget-map.css.map */

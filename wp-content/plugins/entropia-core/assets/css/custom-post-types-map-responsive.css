@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+@keyframes edgtf-glow-pulse-anim {
+  to {
+    text-shadow: 3px 3px 23px rgba(142, 248, 210, 0.85), -3px -3px 23px rgba(142, 248, 210, 0.85), 1px -3px 35px rgba(142, 248, 210, 0.85), -3px 3px 35px rgba(142, 248, 210, 0.85);
+  }
+}
+
+@keyframes edgtf-arrow-glow-pulse-anim {
+  to {
+    text-shadow: 0 0 30px red, 0 0 30px red, -1px -1px 37px red, 2px 2px 37px red;
+  }
+}
+
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgtf-masonry-gallery-holder .edgtf-mg-grid-sizer,
+  .edgtf-masonry-gallery-holder .edgtf-mg-item {
+    width: 50%;
+  }
+  .edgtf-masonry-gallery-holder .edgtf-mg-item.edgtf-masonry-size-large-width, .edgtf-masonry-gallery-holder .edgtf-mg-item.edgtf-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-masonry-gallery-holder .edgtf-mg-grid-sizer,
+  .edgtf-masonry-gallery-holder .edgtf-mg-item {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+.edgtf-portfolio-single-holder .edgtf-ps-image-holder.edgtf-ps-gallery-images {
+  /***** Columns Layout - end *****/
+}
+
+@media only screen and (max-width: 680px) {
+  .edgtf-portfolio-single-holder .edgtf-ps-image-holder.edgtf-ps-gallery-images .edgtf-ps-image {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edgtf-portfolio-single-holder .edgtf-ps-info-holder {
+    margin: 30px 0 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+# Team responsive style - begin
+========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edgtf-team.info-bellow .edgtf-team-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edgtf-team.info-hover {
+    margin-bottom: 30px;
+  }
+}
+
+/* ==========================================================================
+# Team responsive style - end
+========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/entropia-core/assets/css/custom-post-types-map-responsive.css.map */

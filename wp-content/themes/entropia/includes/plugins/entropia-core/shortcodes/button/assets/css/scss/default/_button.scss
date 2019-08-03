@@ -1,0 +1,205 @@
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+
+.edgtf-btn {
+    @include edgtfButtonDefaultStyle();
+    @include edgtfButtonSize();
+    cursor: pointer;
+    
+    &.edgtf-btn-simple {
+        padding: 0 !important;
+        color: $default-heading-color;
+        font-size: 17px;
+        background-color: transparent;
+        border: 0;
+        vertical-align: middle;
+
+        body.edgtf-theme-light-skin & {
+            color: $light-heading-color;
+        }
+
+        .edgtf-btn-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &:not(.edgtf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: $default-heading-color !important;
+
+            body.edgtf-theme-light-skin & {
+                color: $light-heading-color;
+            }
+        }
+
+        &:not(.edgtf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: transparent !important;
+        }
+
+        &:not(.edgtf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: transparent !important;
+        }
+	    
+	    &:hover {
+		    @include edgtfFontShadowHover()
+	    }
+    }
+
+    &.edgtf-btn-solid {
+        @include edgtfButtonSolidColor();
+
+        &:not(.edgtf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: $second-main-color !important;
+        }
+
+        &:not(.edgtf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $default-heading-color !important;
+
+            body.edgtf-theme-light-skin & {
+                color: $light-heading-color !important;
+            }
+
+        }
+
+        &:not(.edgtf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $default-heading-color !important;
+
+            body.edgtf-theme-light-skin & {
+                color: $light-heading-color !important;
+            }
+        }
+    }
+
+    &.edgtf-btn-outline {
+	    @include edgtfButtonOutlineColor();
+
+        &:not(.edgtf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.edgtf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $first-main-color !important;
+        }
+
+        &:not(.edgtf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $first-main-color !important;
+        }
+    }
+    
+    &.edgtf-btn-animation-3d {
+	    position: relative;
+	    background: transparent;
+	    border: none;
+	    
+	    .edgtf-btn-background-holder {
+		    position: absolute;
+		    display: block;
+		    background-color: #fff;
+		    border: 1px solid transparent;
+		    width: 100%;
+		    height: 100%;
+	        top: -6px;
+	        left: -6px;
+		    @include edgtfTransition(left .2s ease-in-out, top .2s ease-in-out, box-shadow .2s ease-in-out);
+		    z-index: 112;
+	    }
+	    &:after {
+            content: '';
+            display: block;
+            position: absolute;
+		    background-color: $first-main-color;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 111;
+		    @include edgtfTransition(color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, left .2s ease-in-out, top .2s ease-in-out, box-shadow .2s ease-in-out);
+	    }
+	    .edgtf-btn-text {
+		    position: relative;
+		    z-index: 113;
+		    top: -6px;
+		    left: -6px;
+		    @include edgtfTransition(left .2s ease-in-out, top .2s ease-in-out);
+	    }
+	    	  
+        &:hover {
+	        .edgtf-btn-background-holder {
+                top: 0;
+                left: 0;
+	        }
+            &:after {
+                top: 0;
+                left: 0;
+            }
+	        .edgtf-btn-text {
+		        top: 0;
+		        left: 0;
+	        }
+        }
+    }
+
+    &.edgtf-btn-animation-shadow {
+        &.edgtf-btn-animation-3d {
+	        .edgtf-btn-background-holder {
+		        @include edgtfShadowButton($second-main-color);
+	        }
+            &:after {
+	            @include edgtfShadowButtonAfter($first-main-color);
+            }
+
+            &:hover {
+	
+	            .edgtf-btn-background-holder {
+	                @include edgtfShadow(transparent);
+	            }
+                &:after {
+	                @include edgtfShadow(#fff);
+                }
+
+            }
+        }
+    }
+    
+    &.edgtf-btn-small {
+        @include edgtfButtonSize(small);
+    }
+    
+    &.edgtf-btn-large {
+        @include edgtfButtonSize(large);
+    }
+    
+    &.edgtf-btn-huge {
+        @include edgtfButtonSize(huge);
+    }
+
+    &.edgtf-btn-icon {
+
+        > i,
+        > span:not(.edgtf-btn-text) {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 0 0 4px;
+            font-size: 1.142857142857143em;
+            line-height: inherit;
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */

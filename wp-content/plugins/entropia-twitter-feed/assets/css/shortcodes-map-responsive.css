@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+@keyframes edgtf-glow-pulse-anim {
+  to {
+    text-shadow: 3px 3px 23px rgba(142, 248, 210, 0.85), -3px -3px 23px rgba(142, 248, 210, 0.85), 1px -3px 35px rgba(142, 248, 210, 0.85), -3px 3px 35px rgba(142, 248, 210, 0.85);
+  }
+}
+
+@keyframes edgtf-arrow-glow-pulse-anim {
+  to {
+    text-shadow: 0 0 30px red, 0 0 30px red, -1px -1px 37px red, 2px 2px 37px red;
+  }
+}
+
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/entropia-twitter-feed/assets/css/shortcodes-map-responsive.css.map */

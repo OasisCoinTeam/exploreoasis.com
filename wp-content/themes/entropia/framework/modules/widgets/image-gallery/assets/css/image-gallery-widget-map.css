@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Image Gallery widget style - begin
+   ========================================================================== */
+@keyframes edgtf-glow-pulse-anim {
+  to {
+    text-shadow: 3px 3px 23px rgba(142, 248, 210, 0.85), -3px -3px 23px rgba(142, 248, 210, 0.85), 1px -3px 35px rgba(142, 248, 210, 0.85), -3px 3px 35px rgba(142, 248, 210, 0.85);
+  }
+}
+
+@keyframes edgtf-arrow-glow-pulse-anim {
+  to {
+    text-shadow: 0 0 30px red, 0 0 30px red, -1px -1px 37px red, 2px 2px 37px red;
+  }
+}
+
+.widget.edgtf-image-gallery-widget {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.widget.edgtf-image-gallery-widget img {
+  display: block;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Image Gallery widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=image-gallery-widget-map.css.map */
